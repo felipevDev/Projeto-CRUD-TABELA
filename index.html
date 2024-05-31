@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela De Produtos</title>
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+    <h3>Formulário de Produtos</h3>
+    <form id="form-produtos">
+        <label for="nome-produto">Nome do Produto:</label>
+        <input id="nome-produto" minlength="10" data-index="new" type="text" name="produto" required>
+        <span id="error"></span>
+        <br><br>
+        <label for="preco-custo">Preço Custo:</label>
+        <input type="number" id="preco-custo" name="custo" required>
+        <br><br>
+        <label for="preco-venda">Preço Venda:</label>
+        <input type="number" id="preco-venda" name="venda" required>
+        <br><br>
+        <label for="data-produto">Data de Validade do Produto:</label>
+        <input type="date" name="data" id="data-produto" name="data" required>
+        <br><br>
+        <label for="produto-estoque">Quantidade em Estoque:</label>
+        <input type="number" id="produto-estoque" name="estoque" required>
+        <br><br>
+        <button type="submit" id="btn-produto" class="btn-listar">Cadastrar Produto</button>
+    </form>
+    <table id="table_produtos" width="100%" border="1" style="text-align: center;">
+        <h3>Produtos Listados</h3>
+        <hr>
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Preço Custo</th>
+                <th>Preço de Venda</th>
+                <th>Data de Validade</th>
+                <th>Quantidade em Estoque</th>
+                <th>Ações</th>
+            </tr>           
+        </thead>
+        <tbody id="tbody-lista">
+</body>
+</html>
